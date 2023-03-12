@@ -1,78 +1,71 @@
 /* Reset Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f5f5f5;
-}
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+  }
+  
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 40px;
+    border-radius: 50px;
+    background: white;
+    box-shadow:  35px 35px 70px #bebebe,
+                 -35px -35px 70px #ffffff;
+    text-align: center;
 }
-
-/* Profile Styles */
-.profile {
-  text-align: center;
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
-
-.profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+.icon {
+    width: 50px;
+    height: 50xpx;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
-
-.profile h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.bio {
+    font-size: 18px;
+    margin-bottom: 25px;
 }
-
-.profile p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Links Styles */
 .links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
-
-.links a {
-  display: block;
-  margin: 0.5rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.link {
+    margin-bottom: 10px;
 }
-
-.links a:hover {
-  background-color: #333;
-  color: #fff;
+.link a {
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 15px 15px 40px #bebebe,
+                 -15px -15px 40px #ffffff;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
 }
-
-.links a i {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.links a span {
-  font-size: 1rem;
-}
+.link a:hover {
+    background-color: #e0e0e0;
+}   
